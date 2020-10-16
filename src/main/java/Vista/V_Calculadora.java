@@ -18,6 +18,9 @@ import javax.swing.JTextField;
  */
 public class V_Calculadora extends JFrame{
     
+    /**
+     * Se definen los objetas de la interfaz
+     */
     public JPanel panel;
     public JButton boton;
     public JTextField numero_1;    
@@ -26,6 +29,9 @@ public class V_Calculadora extends JFrame{
     public JLabel label;
 
     public V_Calculadora() {
+        /**
+         * Se le asigna las propiedadades al panel
+         */
         setSize(300,400);
         setTitle("Resta");
         setLocationRelativeTo(null);
@@ -36,6 +42,9 @@ public class V_Calculadora extends JFrame{
         panel.setLayout(null);
         this.getContentPane().add(panel);
         
+        /**
+         * Se le agreagan lo componentes al panel
+         */
         label = new JLabel("Resta");
         label.setBounds(130, 0, 50, 40);
         numero_1 = new JTextField();
